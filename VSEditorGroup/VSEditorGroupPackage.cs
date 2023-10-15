@@ -3,6 +3,7 @@ using System.Runtime.InteropServices;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.Shell;
+using Microsoft.VisualStudio.Shell.Interop;
 
 namespace VSEditorGroup
 {
@@ -27,6 +28,7 @@ namespace VSEditorGroup
     [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
     [Guid(PackageGuidString)]
     [ProvideMenuResource("Menus.ctmenu", 1)]
+    [ProvideAutoLoad(UIContextGuids80.NoSolution, PackageAutoLoadFlags.BackgroundLoad)]
     public sealed class VSEditorGroupPackage : AsyncPackage
     {
         /// <summary>
@@ -55,7 +57,15 @@ namespace VSEditorGroup
             // When initialized asynchronously, the current thread may be a background thread at this point.
             // Do any initialization that requires the UI thread after switching to the UI thread.
             await JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
-            await Commands.FocusEditorGroup1.InitializeAsync(this);
+            await Commands.FocusEditorGroup1.InitializeAsync(this, 0);
+            await Commands.FocusEditorGroup1.InitializeAsync(this, 1);
+            await Commands.FocusEditorGroup1.InitializeAsync(this, 2);
+            await Commands.FocusEditorGroup1.InitializeAsync(this, 3);
+            await Commands.FocusEditorGroup1.InitializeAsync(this, 4);
+            await Commands.FocusEditorGroup1.InitializeAsync(this, 5);
+            await Commands.FocusEditorGroup1.InitializeAsync(this, 6);
+            await Commands.FocusEditorGroup1.InitializeAsync(this, 7);
+            await Commands.FocusEditorGroup1.InitializeAsync(this, 8);
         }
 
         #endregion

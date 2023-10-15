@@ -52,13 +52,77 @@
               <CommandFlag>DefaultInvisible</CommandFlag>
               <CommandFlag>DynamicVisibility</CommandFlag>
           If you do not want an image next to your command, remove the Icon node /> -->
-      <Button guid="guidVSEditorGroupPackageCmdSet" id="Command1Id" priority="0x0100" type="Button">
-        <Parent guid="guidVSEditorGroupPackageCmdSet" id="MyMenuGroup" />
-        <Icon guid="guidImages" id="bmpPic1" />
-        <Strings>
-          <ButtonText>Focus Editor Group 1</ButtonText>
-        </Strings>
-      </Button>
+        <Button guid="guidVSEditorGroupPackageCmdSet" id="Command1Id" priority="0x0100" type="Button">
+            <Parent guid="guidVSEditorGroupPackageCmdSet" id="MyMenuGroup" />
+            <Strings>
+                <ButtonText>Focus Editor Group 1</ButtonText>
+            </Strings>
+            <CommandFlag>DefaultInvisible</CommandFlag>
+        </Button>
+
+	    <Button guid="guidVSEditorGroupPackageCmdSet" id="Command2Id" priority="0x0100" type="Button">
+		    <Parent guid="guidVSEditorGroupPackageCmdSet" id="MyMenuGroup" />
+		    <Strings>
+			    <ButtonText>Focus Editor Group 2</ButtonText>
+		    </Strings>
+		    <CommandFlag>DefaultInvisible</CommandFlag>
+	    </Button>
+
+		<Button guid="guidVSEditorGroupPackageCmdSet" id="Command3Id" priority="0x0100" type="Button">
+			<Parent guid="guidVSEditorGroupPackageCmdSet" id="MyMenuGroup" />
+			<Strings>
+				<ButtonText>Focus Editor Group 3</ButtonText>
+			</Strings>
+			<CommandFlag>DefaultInvisible</CommandFlag>
+		</Button>
+
+		<Button guid="guidVSEditorGroupPackageCmdSet" id="Command4Id" priority="0x0100" type="Button">
+			<Parent guid="guidVSEditorGroupPackageCmdSet" id="MyMenuGroup" />
+			<Strings>
+				<ButtonText>Focus Editor Group 4</ButtonText>
+			</Strings>
+			<CommandFlag>DefaultInvisible</CommandFlag>
+		</Button>
+
+		<Button guid="guidVSEditorGroupPackageCmdSet" id="Command5Id" priority="0x0100" type="Button">
+			<Parent guid="guidVSEditorGroupPackageCmdSet" id="MyMenuGroup" />
+			<Strings>
+				<ButtonText>Focus Editor Group 5</ButtonText>
+			</Strings>
+			<CommandFlag>DefaultInvisible</CommandFlag>
+		</Button>
+
+		<Button guid="guidVSEditorGroupPackageCmdSet" id="Command6Id" priority="0x0100" type="Button">
+			<Parent guid="guidVSEditorGroupPackageCmdSet" id="MyMenuGroup" />
+			<Strings>
+				<ButtonText>Focus Editor Group 6</ButtonText>
+			</Strings>
+			<CommandFlag>DefaultInvisible</CommandFlag>
+		</Button>
+
+		<Button guid="guidVSEditorGroupPackageCmdSet" id="Command7Id" priority="0x0100" type="Button">
+			<Parent guid="guidVSEditorGroupPackageCmdSet" id="MyMenuGroup" />
+			<Strings>
+				<ButtonText>Focus Editor Group 7</ButtonText>
+			</Strings>
+			<CommandFlag>DefaultInvisible</CommandFlag>
+		</Button>
+
+		<Button guid="guidVSEditorGroupPackageCmdSet" id="Command8Id" priority="0x0100" type="Button">
+			<Parent guid="guidVSEditorGroupPackageCmdSet" id="MyMenuGroup" />
+			<Strings>
+				<ButtonText>Focus Editor Group 8</ButtonText>
+			</Strings>
+			<CommandFlag>DefaultInvisible</CommandFlag>
+		</Button>
+
+		<Button guid="guidVSEditorGroupPackageCmdSet" id="Command9Id" priority="0x0100" type="Button">
+			<Parent guid="guidVSEditorGroupPackageCmdSet" id="MyMenuGroup" />
+			<Strings>
+				<ButtonText>Focus Editor Group 9</ButtonText>
+			</Strings>
+			<CommandFlag>DefaultInvisible</CommandFlag>
+		</Button>
     </Buttons>
 
     <!--The bitmaps section is used to define the bitmaps that are used for the commands.-->
@@ -74,7 +138,14 @@
 
 	<KeyBindings>
 		<KeyBinding guid="guidVSEditorGroupPackageCmdSet" id="Command1Id" editor="guidVSStd97" key1="1" mod1="CONTROL" />
-		<!--<KeyBinding guid="guidVSIXProjectTestPackageCmdSet" id="cmdidCommand2" editor="guidVSStd97" key1="2" mod1="CONTROL" />-->
+		<KeyBinding guid="guidVSEditorGroupPackageCmdSet" id="Command2Id" editor="guidVSStd97" key1="2" mod1="CONTROL" />
+		<KeyBinding guid="guidVSEditorGroupPackageCmdSet" id="Command3Id" editor="guidVSStd97" key1="3" mod1="CONTROL" />
+		<KeyBinding guid="guidVSEditorGroupPackageCmdSet" id="Command4Id" editor="guidVSStd97" key1="4" mod1="CONTROL" />
+		<KeyBinding guid="guidVSEditorGroupPackageCmdSet" id="Command5Id" editor="guidVSStd97" key1="5" mod1="CONTROL" />
+		<KeyBinding guid="guidVSEditorGroupPackageCmdSet" id="Command6Id" editor="guidVSStd97" key1="6" mod1="CONTROL" />
+		<KeyBinding guid="guidVSEditorGroupPackageCmdSet" id="Command7Id" editor="guidVSStd97" key1="7" mod1="CONTROL" />
+		<KeyBinding guid="guidVSEditorGroupPackageCmdSet" id="Command8Id" editor="guidVSStd97" key1="8" mod1="CONTROL" />
+		<KeyBinding guid="guidVSEditorGroupPackageCmdSet" id="Command9Id" editor="guidVSStd97" key1="9" mod1="CONTROL" />
 	</KeyBindings>
 
   <Symbols>
@@ -85,6 +156,14 @@
     <GuidSymbol name="guidVSEditorGroupPackageCmdSet" value="{c97f2dcc-ff9c-4e05-b114-233b7c719fd4}">
       <IDSymbol name="MyMenuGroup" value="0x1020" />
       <IDSymbol name="Command1Id" value="0x0100" />
+      <IDSymbol name="Command2Id" value="0x0101" />
+      <IDSymbol name="Command3Id" value="0x0102" />
+      <IDSymbol name="Command4Id" value="0x0103" />
+      <IDSymbol name="Command5Id" value="0x0104" />
+      <IDSymbol name="Command6Id" value="0x0105" />
+      <IDSymbol name="Command7Id" value="0x0106" />
+      <IDSymbol name="Command8Id" value="0x0107" />
+      <IDSymbol name="Command9Id" value="0x0108" />
     </GuidSymbol>
 
     <GuidSymbol name="guidImages" value="{4f28f3e2-52b9-44e1-b5db-cb1c8103a75f}" >
