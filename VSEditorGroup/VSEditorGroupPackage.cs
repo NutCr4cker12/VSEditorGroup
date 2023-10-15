@@ -57,15 +57,15 @@ namespace VSEditorGroup
             // When initialized asynchronously, the current thread may be a background thread at this point.
             // Do any initialization that requires the UI thread after switching to the UI thread.
             await JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
-            await Commands.FocusEditorGroup1.InitializeAsync(this, 0);
-            await Commands.FocusEditorGroup1.InitializeAsync(this, 1);
-            await Commands.FocusEditorGroup1.InitializeAsync(this, 2);
-            await Commands.FocusEditorGroup1.InitializeAsync(this, 3);
-            await Commands.FocusEditorGroup1.InitializeAsync(this, 4);
-            await Commands.FocusEditorGroup1.InitializeAsync(this, 5);
-            await Commands.FocusEditorGroup1.InitializeAsync(this, 6);
-            await Commands.FocusEditorGroup1.InitializeAsync(this, 7);
-            await Commands.FocusEditorGroup1.InitializeAsync(this, 8);
+            await Commands.FocusEditorGroup.InitializeAsync(this, 0);
+            await Commands.FocusEditorGroup.InitializeAsync(this, 1);
+            await Commands.FocusEditorGroup.InitializeAsync(this, 2);
+            await Commands.FocusEditorGroup.InitializeAsync(this, 3);
+            await Commands.FocusEditorGroup.InitializeAsync(this, 4);
+            await Commands.FocusEditorGroup.InitializeAsync(this, 5);
+            await Commands.FocusEditorGroup.InitializeAsync(this, 6);
+            await Commands.FocusEditorGroup.InitializeAsync(this, 7);
+            await Commands.FocusEditorGroup.InitializeAsync(this, 8);
         }
 
         #endregion
